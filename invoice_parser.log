@@ -1,0 +1,20 @@
+2025-03-09 10:29:36.623 | INFO     | __main__:convert_pdf_to_text:121 - Converting PDF to images: /Users/sagarsiwach/Developer/invoice-parser/sample_data/88.pdf
+2025-03-09 10:29:42.221 | ERROR    | __main__:extract_text_from_image:113 - Error extracting text from image: /usr/local/bin/tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-03-09 10:29:42.412 | ERROR    | __main__:extract_text_from_image:113 - Error extracting text from image: /usr/local/bin/tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-03-09 10:29:42.579 | ERROR    | __main__:extract_text_from_image:113 - Error extracting text from image: /usr/local/bin/tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-03-09 10:29:42.583 | ERROR    | __main__:extract_invoice_data:157 - No text could be extracted from the document
+2025-03-09 10:37:09.882 | INFO     | __main__:convert_pdf_to_images:118 - Converting PDF to images: /Users/sagarsiwach/Developer/invoice-parser/sample_data/88- draft.pdf
+2025-03-09 10:37:10.178 | INFO     | __main__:extract_invoice_data:155 - Using first page of PDF: /var/folders/9k/js1b9pdd08x19cmxjjgyl_hm0000gn/T/tmpkmuxhkag/page_0.png
+2025-03-09 10:37:10.178 | ERROR    | __main__:get_file_as_base64:110 - Error converting file to base64: [Errno 2] No such file or directory: '/var/folders/9k/js1b9pdd08x19cmxjjgyl_hm0000gn/T/tmpkmuxhkag/page_0.png'
+2025-03-09 10:38:28.439 | ERROR    | __main__:extract_invoice_data:196 - API Error: 404 - {"error":"model 'granite:3.2' not found"}
+2025-03-09 10:42:58.474 | INFO     | __main__:extract_invoice_data:157 - Using first page of PDF: /var/folders/9k/js1b9pdd08x19cmxjjgyl_hm0000gn/T/tmpthkm7dcm/page_0.png
+2025-03-09 10:43:10.847 | ERROR    | __main__:extract_invoice_data:233 - No JSON found in response: 
+The image you provided appears to be a corrupted or distorted version of the text. It seems like it's displaying a mix of characters and symbols that don't form any recognizable words or phrases. If you could provide more context or clarify what you're trying to achieve, I'd be happy to help further!...
+2025-03-09 10:43:33.766 | ERROR    | __main__:extract_invoice_data:233 - No JSON found in response: 
+The image you provided appears to be a large, complex string of characters that does not form a coherent sentence or message. It seems to be a mix of different languages and symbols, making it difficult to understand or interpret. If you have any specific questions about the content of this image, please let me know and I'll do my best to help you with that....
+2025-03-09 10:49:53.021 | INFO     | __main__:extract_invoice_data:201 - Processing image file: /Users/sagarsiwach/Developer/invoice-parser/sample_data/88 (dragged).png
+2025-03-09 10:50:21.322 | INFO     | __main__:extract_invoice_data:166 - Converting PDF: /Users/sagarsiwach/Developer/invoice-parser/sample_data/94- draft.pdf
+2025-03-09 10:50:21.323 | INFO     | __main__:extract_invoice_data:167 - Temp directory: /var/folders/9k/js1b9pdd08x19cmxjjgyl_hm0000gn/T/tmpe_3a_mi9
+2025-03-09 10:50:21.523 | INFO     | __main__:extract_invoice_data:176 - Saving first page to: /var/folders/9k/js1b9pdd08x19cmxjjgyl_hm0000gn/T/tmpe_3a_mi9/page_0.png
+2025-03-09 10:50:21.615 | INFO     | __main__:extract_invoice_data:184 - Successfully prepared PDF image at: /var/folders/9k/js1b9pdd08x19cmxjjgyl_hm0000gn/T/tmpe_3a_mi9/page_0.png
+2025-03-09 10:50:21.616 | INFO     | __main__:extract_invoice_data:212 - Cleaned up temporary directory

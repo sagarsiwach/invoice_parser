@@ -1,0 +1,41 @@
+{
+  "invoice_number": "CONGZHOU PACKAGING MACHINERY MFG CO",
+  "invoice_date": "27-Feb-25",
+  "due_date": "31-Dec-24",
+  "vendor": {
+    "name": "KABIRA MOBILITY PVT LTD",
+    "address": "PLOT NO: 559 (A) AND 560 (B)",
+    "phone": "73269099",
+    "email": "dharwad@kamataka.co.in",
+    "tax_id": "29AAJC1205D1ZW"
+  },
+  "customer": {
+    "name": "KABIRA MOBILITY PVT LTD",
+    "address": "PLOT NO: 559 (A) AND 560 (B)",
+    "phone": "73269099",
+    "email": "dharwad@kamataka.co.in",
+    "tax_id": "29AAJC1205D1ZW"
+  },
+  "items": [
+    {
+      "description": "Bush",
+      "quantity": 1,
+      "unit_price": 18.0,
+      "total_price": 18.0
+    },
+    {
+      "description": "Rear End Bush N10-20024003",
+      "quantity": 1,
+      "unit_price": 25.0,
+      "total_price": 25.0
+    }
+  ],
+  "subtotal": 43.0,
+  "tax": 9.0,
+  "discount": 0.0,
+  "shipping": 0.0,
+  "total_amount": 52.0,
+  "payment_terms": "INR Three Hundred Sixty Only",
+  "payment_method": "Bank Transfer",
+  "notes": "This is a Computer Generated Invoice"
+}
