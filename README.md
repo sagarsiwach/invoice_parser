@@ -1,33 +1,32 @@
-Invoice Parser
-Show Image
-Overview
+# Invoice Parser
+
+
+## Overview
 Invoice Parser is a powerful terminal-based tool that extracts structured data from invoice images and PDFs using the vision capabilities of the Granite 3.2 vision model via Ollama. This tool streamlines the process of digitizing and standardizing invoice information for accounting, bookkeeping, and data entry tasks.
-Features
 
-📄 Supports both PDF and image formats (PNG, JPG, JPEG)
-🔍 Intelligent data extraction using Granite 3.2 vision model
-🧠 Extracts comprehensive invoice details including:
+## Features
+- 📄 Supports both PDF and image formats (PNG, JPG, JPEG)
+- 🔍 Intelligent data extraction using Granite 3.2 vision model
+- 🧠 Extracts comprehensive invoice details including:
+ - Basic invoice information (number, dates)
+ - Vendor and customer details
+ - Line items with quantities and prices
+ - Financial totals and payment terms
+- 📊 Displays extracted data with syntax highlighting
+- 💾 Exports data to JSON files
+- 🗂️ Interactive file browser for selecting invoices
+- 📝 Detailed logging for troubleshooting
 
-Basic invoice information (number, dates)
-Vendor and customer details
-Line items with quantities and prices
-Financial totals and payment terms
+## Requirements
+- Python 3.8+
+- Ollama server running with the Granite 3.2 vision model
+- Poppler (for PDF processing)
 
+## Installation
 
-📊 Displays extracted data with syntax highlighting
-💾 Exports data to JSON files
-🗂️ Interactive file browser for selecting invoices
-📝 Detailed logging for troubleshooting
-
-Requirements
-
-Python 3.8+
-Ollama server running with the Granite 3.2 vision model
-Poppler (for PDF processing)
-
-Installation
-1. Clone the repository
-bashCopygit clone https://github.com/yourusername/invoice-parser.git
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/invoice-parser.git
 cd invoice-parser
 2. Install dependencies
 bashCopypip install -r requirements.txt
@@ -41,11 +40,14 @@ Download and install from poppler for Windows
 4. Configure Ollama
 Ensure Ollama is running and the Granite 3.2 vision model is available:
 bashCopyollama pull granite:3.2
-Configuration
+
+### Configuration
 Edit the following settings in the script if needed:
+
 pythonCopyOLLAMA_URL = "https://ollama.congzhoumachinery.com"  # Change to your Ollama server URL
 OLLAMA_MODEL = "granite:3.2"  # Ensure this matches your model name in Ollama
-Usage
+
+### Usage
 Run the tool with:
 bashCopypython invoice_parser.py
 Then follow the interactive prompts to:
