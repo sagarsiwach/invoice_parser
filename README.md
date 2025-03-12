@@ -25,40 +25,51 @@ Invoice Parser is a powerful terminal-based tool that extracts structured data f
 ## Installation
 
 ### 1. Clone the repository
-```bash
+```
 git clone https://github.com/yourusername/invoice-parser.git
-cd invoice-parser
-2. Install dependencies
-bashCopypip install -r requirements.txt
-3. Install Poppler (required for PDF processing)
+cd invoice-parser```
+
+### 2. Install dependencies
+```
+pip install -r requirements.txt
+```
+### 3. Install Poppler (required for PDF processing)
 On macOS:
-bashCopybrew install poppler
+```
+brew install poppler
+```
 On Ubuntu/Debian:
-bashCopysudo apt-get install poppler-utils
+```
+sudo apt-get install poppler-utils
+```
 On Windows:
+```
 Download and install from poppler for Windows
-4. Configure Ollama
+```
+### 4. Configure Ollama
 Ensure Ollama is running and the Granite 3.2 vision model is available:
-bashCopyollama pull granite:3.2
+```ollama pull granite:3.2```
 
 ### Configuration
 Edit the following settings in the script if needed:
 
-pythonCopyOLLAMA_URL = "https://ollama.congzhoumachinery.com"  # Change to your Ollama server URL
+```
+OLLAMA_URL = "https://ollama.congzhoumachinery.com"  # Change to your Ollama server URL
 OLLAMA_MODEL = "granite:3.2"  # Ensure this matches your model name in Ollama
+```
 
 ### Usage
 Run the tool with:
-bashCopypython invoice_parser.py
+```python invoice_parser.py```
+
 Then follow the interactive prompts to:
+1. Navigate to and select an invoice file (PDF or image)
+2. Wait while the invoice is processed
+3. Review the extracted data
+4. Optionally save the data to a JSON file
 
-Navigate to and select an invoice file (PDF or image)
-Wait while the invoice is processed
-Review the extracted data
-Optionally save the data to a JSON file
-
-Example Output
-jsonCopy{
+#### Example Output
+```{
   "invoice_number": "INV-12345",
   "invoice_date": "2023-05-15",
   "due_date": "2023-06-15",
@@ -97,17 +108,19 @@ jsonCopy{
   "payment_terms": "Net 30",
   "payment_method": "Bank Transfer",
   "notes": "Please include invoice number in payment reference."
-}
-Troubleshooting
+}```
 
-Check the generated invoice_parser.log file for detailed error messages
-Ensure your Ollama server is running and accessible
-Verify that the Granite 3.2 vision model is properly installed in Ollama
-For PDF processing issues, confirm that Poppler is correctly installed
+### Troubleshooting
 
-License
+1. Check the generated invoice_parser.log file for detailed error messages
+2. Ensure your Ollama server is running and accessible
+3. Verify that the Granite 3.2 vision model is properly installed in Ollama
+4. For PDF processing issues, confirm that Poppler is correctly installed
+
+## License
 MIT License
-Acknowledgements
+
+## Acknowledgements
 
 Ollama for the local model hosting
 Granite AI for the vision model capabilities
